@@ -1,0 +1,10 @@
+<%= form_for rental do |f| %>
+  <li>
+    <li><p><%= image_tag rental.rental_photo.url(:thumb)%></p></li>
+      <li><p>Bedrooms: <%= rental.bedrooms %></p></li>
+      <li><p>Description: <%= rental.description %></p></li>
+      <li><p>Price: $<%= rental.price %></p></li>
+      <br />
+      <br />
+  </li>
+<% end %>

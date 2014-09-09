@@ -1,0 +1,16 @@
+<h1> Available Rentals </h1>
+<%= link_to "Add A Rental", new_rental_path, class: "btn btn-warning", id: "add_rental_link", remote: true %>
+
+<div id="all_rentals">
+  <ul>
+    <% @rentals.each do |rental| %>
+      <p><%= image_tag rental.rental_photo.url(:thumb)%></p>
+      <li><p>Bedrooms: <%= rental.bedrooms %></p></li>
+      <li><p>Description: <%= rental.description %></p></li>
+      <li><p>Price: $<%= rental.price %></p></li>
+      <br />
+      <br />
+    <% end %>
+  </ul>
+</div>
+

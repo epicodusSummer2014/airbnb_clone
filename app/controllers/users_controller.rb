@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect to root_url
+      redirect to rentals_path
     else
       'new'
     end
@@ -23,6 +23,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-     params.require(:user).permit(:email, :password, :password_confirmation, :username)
+     params.require(:user).permit(:email, :password, :password_confirmation, :remember_me, :username)
   end
 end

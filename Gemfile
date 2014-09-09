@@ -8,6 +8,10 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
+gem "paperclip"
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'remotipart'
 
 group :development do
   gem 'better_errors'

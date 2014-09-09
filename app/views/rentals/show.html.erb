@@ -1,0 +1,19 @@
+<p><%= image_tag @rental.rental_photo.url(:medium)%></p>
+
+<h2>Description: <%= @rental.description %></h2>
+
+<h2>Bedrooms: <%= @rental.bedrooms %></h2>
+
+<h2>Street Address: <%= @rental.address %></h2>
+
+<h2>City: <%= @rental.city %></h2>
+
+<h2>State: <%= @rental.state %></h2>
+
+<h2>Price: $<%= @rental.price %></h2>
+
+<p><%= link_to "Reserve Me", new_rental_reservation_path(@rental), :class => "btn btn-success" %></p>
+
+
+
+
